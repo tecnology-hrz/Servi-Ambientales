@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servi Ambientales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Servi Ambientales Logo" class="logo-nav">
+            <span class="nombre-empresa">SERVI <span class="destacado">AMBIENTALES</span></span>
+        </div>
+        
+        <ul class="menu-principal">
+            <li><a href="#nuestros-servicios">NUESTROS SERVICIOS</a></li>
+            <li><a href="#cali">CALI</a></li>
+            <li><a href="#cali-barrido">CALI - BARRIDO</a></li>
+            <li><a href="#palmira">PALMIRA</a></li>
+            <li><a href="#servicio-cliente">SERVICIO AL CLIENTE</a></li>
+            <li><a href="#citaciones">CITACIONES Y NOTIFICA</a></li>
+            <li class="dropdown">
+                <a href="#mas" class="dropdown-toggle">MÁS ▼</a>
+                <div class="dropdown-menu">
+                    <a href="#plan-seguridad">PLAN DE SEGURIDAD</a>
+                    <a href="#aprovechamiento">APROVECHAMIENTO</a>
+                    <a href="#candelaria">CANDELARIA</a>
+                    <a href="#yumbo">YUMBO</a>
+                </div>
+            </li>
+        </ul>
+        
+        <button class="btn-aula">
+            PORTAL CLIENTE
+        </button>
+        
+        <!-- Botón hamburguesa (solo móvil) -->
+        <button class="btn-hamburguesa" id="btnHamburguesa" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Menú lateral móvil -->
+    <div class="menu-lateral" id="menuLateral">
+        <div class="menu-lateral-header">
+            <img src="logo.png" alt="Logo" class="menu-lateral-logo">
+            <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+                <span>&times;</span>
+            </button>
+        </div>
+        
+        <nav class="menu-lateral-nav">
+            <a href="#nuestros-servicios" class="menu-lateral-item">
+                NUESTROS SERVICIOS
+            </a>
+            <a href="#cali" class="menu-lateral-item">
+                CALI
+            </a>
+            <a href="#cali-barrido" class="menu-lateral-item">
+                CALI - BARRIDO
+            </a>
+            <a href="#palmira" class="menu-lateral-item">
+                PALMIRA
+            </a>
+            <a href="#servicio-cliente" class="menu-lateral-item">
+                SERVICIO AL CLIENTE
+            </a>
+            <a href="#citaciones" class="menu-lateral-item">
+                CITACIONES Y NOTIFICA
+            </a>
+            
+            <div class="menu-lateral-submenu">
+                <button class="menu-lateral-item submenu-btn" id="submenuBtn">
+                    <span>MÁS</span>
+                    <span class="flecha">▼</span>
+                </button>
+                <div class="submenu-contenido" id="submenuContenido">
+                    <a href="#plan-seguridad" class="menu-lateral-subitem">
+                        PLAN DE SEGURIDAD
+                    </a>
+                    <a href="#aprovechamiento" class="menu-lateral-subitem">
+                        APROVECHAMIENTO
+                    </a>
+                    <a href="#candelaria" class="menu-lateral-subitem">
+                        CANDELARIA
+                    </a>
+                    <a href="#yumbo" class="menu-lateral-subitem">
+                        YUMBO
+                    </a>
+                </div>
+            </div>
+            
+            <a href="#portal" class="menu-lateral-item btn-portal-lateral">
+                PORTAL CLIENTE
+            </a>
+        </nav>
+    </div>
+
+    <!-- Overlay oscuro -->
+    <div class="overlay-menu" id="overlayMenu"></div>
+
+    <!-- Contenido principal -->
+    <main class="contenedor-principal">
+        <!-- Sección Hero -->
+        <div class="tarjeta-glass">
+            <div class="contenido-hero">
+                <div class="seccion-imagen animado">
+                    <img src="logo.png" alt="Servi Ambientales Valle" class="logo-principal">
+                </div>
+                
+                <div class="seccion-texto animado">
+                    <h2 class="subtitulo-principal">Del Valle para el Valle.</h2>
+                    
+                    <p class="descripcion-empresa">
+                        Somos una Empresa Vallecaucana creada con el propósito de brindar un excelente servicio de Recolección de residuos sólidos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Frecuencia de Recolección -->
+        <section class="seccion-frecuencia">
+            <h2 class="titulo-principal-seccion">Frecuencia de Recolección</h2>
+            
+            <div class="tarjeta-glass tarjeta-frecuencia">
+                <div class="contenido-frecuencia">
+                    <div class="frecuencia-texto">
+                        <p class="descripcion-seccion">
+                            Conoce los días y horarios en los que nuestro equipo estará recolectando en tu sector. 
+                            Mantente informado sobre las rutas de recolección y asegúrate de sacar tus residuos en el horario correcto.
+                        </p>
+                        <div class="info-adicional">
+                            <div class="info-item">
+                                <h3>Servicio Regular</h3>
+                                <p>Recolección domiciliaria según calendario establecido</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>Cobertura</h3>
+                                <p>Cali, Palmira, Candelaria y Yumbo</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="frecuencia-imagen">
+                        <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/STICKER%20FRECUENCIA-03-da96ddc.png/:/rs=w:1160,h:870" 
+                             alt="Frecuencia de Recolección" 
+                             class="imagen-frecuencia">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Nuestra Empresa -->
+        <section class="seccion-empresa">
+            <h2 class="titulo-principal-seccion">Nuestra Empresa</h2>
+            
+            <div class="tarjeta-glass">
+                <div class="contenido-empresa">
+                    <!-- Nuestra Visión -->
+                    <div class="empresa-card">
+                        <div class="empresa-imagen">
+                            <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/blob-e6852ae.png/:/cr=t:48.04%25,l:0%25,w:100%25,h:40.94%25/rs=w:600,h:300,cg:true" 
+                                 alt="Nuestra Visión" 
+                                 class="imagen-empresa">
+                        </div>
+                        <div class="empresa-info">
+                            <h3 class="empresa-titulo">NUESTRA VISIÓN</h3>
+                            <p class="empresa-descripcion">
+                                Llegar con esfuerzo en pocos años, ser una la empresa de Aseo Publico mas eficiente, tecnológica con un servicio integral a nuestro usuarios.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Nuestra Misión -->
+                    <div class="empresa-card">
+                        <div class="empresa-imagen">
+                            <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/IMG-20211020-WA0008.jpg/:/cr=t:5.56%25,l:0%25,w:100%25,h:88.89%25/rs=w:600,h:300,cg:true" 
+                                 alt="Nuestra Misión" 
+                                 class="imagen-empresa">
+                        </div>
+                        <div class="empresa-info">
+                            <h3 class="empresa-titulo">NUESTRA MISIÓN</h3>
+                            <p class="empresa-descripcion">
+                                Prestar el servicio de aseo domiciliario a través de una gestión integral que garantice la satisfacción del usuario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Política de Calidad -->
+        <section class="seccion-politica">
+            <h2 class="titulo-principal-seccion">Política de Calidad</h2>
+            
+            <div class="tarjeta-glass">
+                <div class="contenido-politica">
+                    <div class="politica-imagen animado">
+                        <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/blob-2ae2f31.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:653" 
+                             alt="Política de Calidad" 
+                             class="imagen-politica">
+                    </div>
+                    
+                    <div class="politica-texto animado">
+                        <p class="descripcion-politica">
+                            Garantizar la gestión integral administrativa, comercial y operativa reflejándose en la Excelente prestación del servicio de aseo integral domiciliario, apoyados por la competencia del talento humano, con una infraestructura que permite satisfacer las necesidades y aspiraciones de nuestros clientes, enfocados bajo una cultura de mejoramiento continuo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Nuestros Servicios -->
+        <section class="seccion-servicios">
+            <h2 class="titulo-principal-seccion">Nuestros Servicios</h2>
+            
+            <div class="tarjeta-glass">
+                <div class="servicios-grid">
+                    <!-- Servicio 1 -->
+                    <div class="servicio-card">
+                        <div class="servicio-imagen">
+                            <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/IMAGEN-14009676-2.jpg/:/rs=w:200,h:100,cg:true,m/cr=w:200,h:100" 
+                                 alt="Recolección de Residuos Sólidos">
+                        </div>
+                        <div class="servicio-info">
+                            <h3>RECOLECCIÓN DE RESIDUOS SÓLIDOS</h3>
+                            <p>Recogemos sus residuos, en horarios diurnos, tres veces por semana, en la comodidad de tu hogar.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="servicio-card">
+                        <div class="servicio-imagen">
+                            <img src=" https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/barrido.jpg/:/rs=w:150,h:100,cg:true,m/cr=w:150,h:100" 
+                                 alt="Barrido de Calles">
+                        </div>
+                        <div class="servicio-info">
+                            <h3>BARRIDO DE CALLES</h3>
+                            <p>Barremos nuestras calles de la ciudad conforme a lo estipulado por nuestros entes de control.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="servicio-card">
+                        <div class="servicio-imagen">
+                            <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/corte%20de%20cesped.jpg/:/rs=w:104,h:100,cg:true,m/cr=w:104,h:100" 
+                                 alt="Corte de Césped">
+                        </div>
+                        <div class="servicio-info">
+                            <h3>CORTE DE CÉSPED</h3>
+                            <p>Cortamos el césped de los parques de la ciudad.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="servicio-card">
+                        <div class="servicio-imagen">
+                            <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/lavado%20a%20presion.jpg/:/rs=w:149,h:100,cg:true,m/cr=w:149,h:100" 
+                                 alt="Poda de Árboles">
+                        </div>
+                        <div class="servicio-info">
+                            <h3>PODA DE ÁRBOLES</h3>
+                            <p>Podamos los Árboles asignados por el Dagma.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 5 -->
+                    <div class="servicio-card">
+                        <div class="servicio-imagen">
+                            <img src="https://img1.wsimg.com/isteam/ip/3767bcdb-e4d0-4b1c-8645-974220dbae6f/poda%20de%20arboles.jpg/:/rs=w:194,h:100,cg:true,m/cr=w:194,h:100" 
+                                 alt="Limpieza de Áreas Públicas">
+                        </div>
+                        <div class="servicio-info">
+                            <h3>LIMPIEZA Y LAVADO DE ÁREAS PÚBLICAS</h3>
+                            <p>Limpiamos y lavamos las áreas públicas de nuestra ciudad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <h3 class="footer-titulo">Serviambientales Valle S.A E.S.P</h3>
+            <p class="footer-copyright">
+                Copyright © 2025 Serviambientales Valle S.A E.S.P - Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
